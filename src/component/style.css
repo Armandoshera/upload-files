@@ -1,0 +1,196 @@
+.container {
+    width: 800px;
+    height: 260px;
+    border: 1px solid #009688;
+    border-radius: 7px;
+}
+
+.text-title {
+    color: #009688;
+    font-size: 24px;
+}
+
+.upload-button {
+    color: #009688;
+    border: 1px solid #009688;
+
+}
+
+.upload-file {
+    display: none;
+}
+
+.selected-file-info {
+    margin-top: 4px;
+    margin-right: 60px;
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+}
+
+.upload-file-btn {
+    background-color: teal;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+.upload-file-btn:hover {
+    background-color: #006f5f;
+}
+
+.auth-modal {
+    border: 1px solid #006f5f;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.auth-title-text {
+    color: #006f5f;
+    font-size: 27px;
+}
+
+.auth-pharagraph-text {
+    color: #006f5f;
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+}
+
+.auth-modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    text-align: center;
+}
+
+.auth-modal-actions {
+    margin-top: 40px;
+}
+
+.auth-modal-close,
+.auth-modal-authenticate {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.auth-modal-close {
+    background-color: white;
+    color: #006f5f;
+    border: 1px solid #006f5f;
+}
+
+.error-message {
+    color: red;
+}
+
+.auth-modal-authenticate {
+    background-color: #006f5f;
+    color: white;
+}
+
+.auth-modal-close:hover,
+.auth-modal-authenticate:hover {
+    opacity: 0.8;
+}
+
+/*static list  list */
+.static-files-list {
+    margin-top: 60px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.static-files-title {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #009688;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.static-files-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.static-file-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.static-file-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.file-icon {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.pdf-icon {
+    color: #d32f2f;
+}
+
+.docx-icon {
+    color: #1976d2;
+}
+
+.txt-icon {
+    color: #388e3c;
+}
+
+.file-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #006f5f;
+}
+
+.file-owner {
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .static-files-list {
+        padding: 15px;
+    }
+
+    .static-file-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .file-name,
+    .file-owner {
+        margin-top: 5px;
+    }
+}
